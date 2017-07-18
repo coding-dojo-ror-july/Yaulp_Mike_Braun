@@ -1,0 +1,10 @@
+<h3>Create a new restaurant!</h3>
+<br>
+<form action="/restaurants" method="POST">
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+    <label> Name </label>
+     <input type="text" name="restaurant[name]">
+
+
+ <button type="submit"> Create Restaurant </button>
+</form>

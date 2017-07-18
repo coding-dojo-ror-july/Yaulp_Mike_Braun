@@ -1,0 +1,19 @@
+<% if flash[:errors] %>
+  <% flash[:errors].each do |error| %>
+    <p style="color:red;"><%= error %></p>
+  <% end %>
+<% end %>
+
+<h1> Yaulp your restaurants!</h1>
+<br>
+
+<% @restaurants.each do |restaurant|%> <!--|this| should match the restaurant.name-->
+<h3> <%= restaurant.name %> </h3>
+<br>
+<% end %>
+
+<br>
+<br>
+
+
+<a href="/restaurants/new">Create a new Restaurant</a>
